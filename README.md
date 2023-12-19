@@ -1,1 +1,2 @@
-# programming-in-c-kochan
+### Programming in C 
+Stephen G. kochan
