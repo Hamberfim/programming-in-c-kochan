@@ -10,4 +10,4 @@ explicitCast: explicitCast.c
 	gcc -o explicitCast.exe explicitCast.c
 
 exercises: exercises.c
-	gcc -o exercises.exe exercises.c
+	gcc -o exercises.exe exercises.c -lm 
