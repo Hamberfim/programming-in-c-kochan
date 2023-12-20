@@ -18,5 +18,11 @@ int main(void)
     printf("charVar = %c\n", charVar);
     printf("boolVar = %i\n", boolVar);
 
+    // type specifiers
+    long int longVar;                              // system dependant but usually at least 32bits
+    long long int maxAllowedStorage = longVar * 3; // system dependant but usually at least 64bits
+    short int shortVar;                            // system dependant but usually at least 16bits
+    unsigned unsignedVar;                          // only positive numbers
+
     return 0;
 }
