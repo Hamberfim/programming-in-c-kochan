@@ -5,3 +5,6 @@ dataTypes: dataTypes.c
 
 implicitConversion: implicitConversion.c
 	gcc -o implicitConversion.exe implicitConversion.c
+
+explicitCast: explicitCast.c
+	gcc -o explicitCast.exe explicitCast.c
