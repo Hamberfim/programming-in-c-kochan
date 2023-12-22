@@ -5,3 +5,6 @@ forLoops: forLoops.c
 
 whileLoops: whileLoops.c
 	gcc -o whileLoops.exe whileLoops.c
+
+doWhile: doWhile.c
+	gcc -o doWhile.exe doWhile.c
