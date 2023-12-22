@@ -7,9 +7,9 @@ int main()
     int num, triangularNum;
     triangularNum = 0;
 
-    for (int num = 1; num <= 200; num = num + 1)
+    for (int num = 1; num <= 200; num++)
     {
-        triangularNum = triangularNum + num;
+        triangularNum += num;
     }
     printf("The 200th triangular number is %i\n", triangularNum);
 
