@@ -1,8 +1,33 @@
 #include <stdio.h>
 
-#define calcAbsValue
+// declare function prototypes
+void calcAbsValue();
+void calcGradeAvg();
 
 int main(void)
+{
+    // chose which function
+    int choice;
+    printf("Enter '1' to find the absolute value of a number\nor enter '2' to find grade averages.\n");
+    scanf("%i", &choice);
+
+    if (choice == 1)
+    {
+        calcAbsValue();
+    }
+    else if (choice == 2)
+    {
+        calcGradeAvg();
+    }
+    else
+    {
+        printf("Input not recognized as a valid choice.");
+    }
+
+    return 0;
+}
+
+void calcAbsValue()
 {
     // calc absolute value
     int number;
@@ -13,7 +38,10 @@ int main(void)
         number = -number;
     }
     printf("The absolute value is %i\n\n", number);
+}
 
+void calcGradeAvg()
+{
     // calc avg grade
     int numberOfGrades;
     int failureCount = 0;
@@ -37,6 +65,4 @@ int main(void)
     average = (double)gradeTotal / numberOfGrades;
     printf("\nGrade average %.3lf\n", average);
     printf("Number of failures = %i\n", failureCount);
-
-    return 0;
 }
